@@ -1,1 +1,1 @@
-# Sample Paper
+# Astro Homework 1
