@@ -1,12 +1,4 @@
 \documentclass{templates/homework}
-\usepackage{xcolor} \pagecolor[rgb]{0.1,0.1,0.1} \color[rgb]{1,1,1}
-\definecolor{invertedblue}{rgb}{0.85, 0.85, 0}
-\hypersetup{
-    colorlinks=true,
-    linkcolor=white,
-    urlcolor=invertedblue,
-    citecolor=white
-}
 
 \title{Our Universe Homework 1}
 \author{Christoffer Aakre}
@@ -48,7 +40,7 @@ lunch date is $1977$.
         t_\text{i} &= \frac{4.3 \times \SI{9.46E15}{\meter}}{\SI{17E3}{\meter\per\second}} \\
         &= \SI{2.39E12}{\second} \\
         &= \SI{7.5876E4}{} \text{ years} \\
-        &\approx \text{7588 years}. \\
+        &\approx \text{75880 years}. \\
         \end{align*}
     \item 
     \begin{align*}
@@ -91,10 +83,12 @@ so the astronaut will be 30 or 31 years old, depending on how far away his birth
 when he left Earth.
 \exercise
 \exercisepart
-\begin{figure}
-\begin{tikzpicture}
-    \draw (0, 0) -- (1, 1);
-\end{tikzpicture}
+\begin{figure}[t]
+    \includegraphics[]{diagrams/figure1.png}
+    \caption{The celestial sphere appears to rotate
+    around the Earth in the opposite direction of the
+    Earth's rotation.}
+    \label{fig:1}
 \end{figure}
 The earth is spinning in the eastward direction. Thus, the
 celestial sphere appears to us to spin in the westward direction, and so the stars
@@ -102,8 +96,15 @@ in the sky appear to move to the west. Thus, the stars that pass through our zen
 will all have different right ascensions. However, since the earth spins on a plane, there
 is no spin in the North or South direction, and so the celestial sphere too does not appear to spin
 in the North or South direction. Therefore, the declination value of all the stars that pass
-through the zenith will be the same.
+through the zenith will be the same. See \figref{fig:1}
 \exercisepart
+\begin{figure}[t]
+    \includegraphics[]{diagrams/rsz_figure2.png}
+    \caption{Lunar eclipses occur when the Sun, Earth and Moon line up.
+    However, the Moon's orbit is slightly tilted, so they don't always
+    line up every month.}
+    \label{fig:2}
+\end{figure}
 A lunar eclipse occurs when the Sun, Earth, and Moon line up,
 and the Earth blocks the Sun's light, preventing it from reaching the
 Moon, leaving the Moon in the Earth's shadow. So, it would be natural to
@@ -111,14 +112,28 @@ expect a lunar eclipse once a month when the Moon lines up behind the Earth.
 However, the Moon's orbital plane is tilted slightly relative to the line joining
 the centres of the Earth and Sun, and so often, when we would expect a lunar eclipse,
 the Moon is actually below or above the Earth, so there is no lunar eclipse.
+See \figref{fig:2}
 \exercisepart
+\begin{figure}[t]
+    \includegraphics[]{diagrams/figure3.png}
+    \caption{A solar eclipse occurs when the Moon blocks
+    out the sunlight.}
+    \label{fig:3}
+\end{figure}
 A solar eclipse occurs when the Sun, Moon, and Earth line up, and the Moon
 blocks out the sunlight so that the Sun is hidden behind the Moon. The Moon's apparent size
 varies with time since the Earth-Moon orbit is elliptical, not circular. Sometimes,
 the Moon's apparent size is not large enough to completely cover the Sun, and so a
 narrow ring of sun is seen around the Moon's shadow. This is known as an
-\textbf{annular eclipse}.
+\textbf{annular eclipse}. See \figref{fig:3}
 \exercisepart
+\begin{figure}[t]
+    \includegraphics[]{diagrams/figure4.png}
+    \caption{By the time the Moon has orbited the Earth,
+    the Earth has moved about $30^\circ$ through its orbit around the sun,
+    so the Moon needs to \Quote{catch up}.}
+    \label{fig:4}
+\end{figure}
 A \textbf{sidereal month} is the time it takes for the Moon to complete
 one orbit around the Earth. It is approximately 27.3 days.
 
@@ -136,6 +151,18 @@ it moves $390^\circ$, and so the ratio of the synodic month to the sidereal mont
     &= 1.08333\dots \\
     &= \text{About 8\% longer}.
 \end{align*}
+See \figref{fig:4}
 \exercise
-
+The Earth is not perfectly spherical, so sometimes
+there is a net force on the Earth from the Sun with a component
+perpendicular to the plane of the Earth-Sun orbit. 6 months later,
+when the Earth is on the opposite side of the Sun, the net force is in the opposite direction,
+but the displacement vector from the Earth to the Sun is also in the opposite direction,
+and thus the resultant torque is in the same direction in both cases. Thus, the
+precession builds up over time. The period of precession is about 26000 years.
+One consequence is that the time between consecutive winters
+or consecutive summers is about 20 minutes shorter than the time it takes
+for the Earth to complete one orbit around the Sun. Also, the pole stars change
+with time due to the precession, i.e. Polaris has not always been the North star,
+and will not always be.
 \end{document}
